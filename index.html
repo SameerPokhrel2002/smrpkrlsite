@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAMEER POKHREL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--used this mainly for calendar icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark-mode"> <!--to toggle dark mode on or off-->
+    <nav
+      class="navbar navbar-expand-lg bg-white border-bottom shadow-sm fixed-top"
+    >
+      <div class="container-fluid px-4">
+        <!-- Brand/Logo on the left -->
+        <a class="navbar-brand" href="#">Sameer Pokhrel</a>
+
+        <!-- Mobile toggle button -->
+        <button
+
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation items on the right -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"></li> <!--this empty list item is to align home icon/text perfectly with rest of the items-->
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">
+                <i class="fas fa-home"></i>Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="fas fa-user"></i>About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">
+                <i class="fas fa-cogs"></i>Skills
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">
+                <i class="fas fa-code"></i>Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">
+                <i class="fas fa-briefcase"></i>Experience
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">
+                <i class="fas fa-graduation-cap"></i>Education
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="fas fa-phone"></i>Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-primary ms-2"
+                href="https://drive.google.com/file/d/1o5Vf8XTstDdXPkWL39rbPaBfETCJHuO2/view?usp=drive_link"
+                target="_blank"
+              >
+                <i class="fas fa-download me-1"></i>Resume
+              </a>
+            </li>
+            <li class="nav-item">
+  <button id="darkModeToggle" class="btn btn-outline-secondary ms-2 nav-link">
+    <i id="darkModeIcon" class="fas fa-moon fa-2x"></i>
+  </button>
+</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section
+      id="intro"
+      class="vh-100 d-flex flex-column justify-content-center align-items-center bg-primary text-white text-center px-3"
+    >
+      <!-- Particles Background -->
+      <div
+        id="particles-js"
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="z-index: 0"
+      ></div>
+
+      <!--Image of me :)-->
+      <img
+        src="profilePhotoSameer-modified.png"
+        alt="Sameer Pokhrel"
+
+        class="rounded-circle shadow img-fluid"
+        style="
+          width: 280px;
+          height: auto;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+          margin-bottom: 20px;
+        "
+      />
+
+      <!-- Name and Intro -->
+      <h1 class="display-4">Sameer Pokhrel</h1>
+      <p class="lead">
+        <span id="typewriter"></span>
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 headingg">About Me</h2>
+        <div class="row justify-content-center align-items-center">
+          <!-- Left Column: About Text -->
+          <div class="col-md-6 text-start">
+            <p class="lead justify-text abt-txt">
+              I'm a BSc CSIT student at
+              <a
+                href="https://pmc.tu.edu.np/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Patan Multiple Campus</a
+              >
+              who enjoys building websites and full-stack applications.
+            </p>
+            <br />
+            <p class="lead justify-text abt-txt">
+              I’m confident working with both frontend and backend tools — HTML,
+              CSS, React on one side, and Node.js, MySQL, and MongoDB on the
+              other. I like solving real-world problems and seeing things I
+              build come to life.
+            </p>
+            <br />
+            <p class="lead justify-text abt-txt">
+              I'm always looking to improve, learn new tools, and collaborate on
+              meaningful projects that make an impact.
+            </p>
+          </div>
+
+          <!--Social Medias -->
+          <div class="col-md-4 text-start ms-md-5 mt-4 mt-md-0">
+            <h5>Connect with me:</h5>
+            <p class="mb-2">
+              <a href="https://github.com/SameerPokhrel2002" target="_blank"
+                ><i class="fab fa-github me-2"></i>GitHub</a
+              >
+            </p>
+            <p class="mb-2">
+              <a
+                href="https://www.linkedin.com/in/sameer-pokhrel-7035b01b4/"
+                target="_blank"
+                ><i class="fab fa-linkedin me-2"></i>LinkedIn</a
+              >
+            </p>
+            <p class="mb-2">
+              <a href="https://medium.com/@sameerpokhrel2002" target="_blank">
+                <i class="fab fa-medium me-2"></i>Medium</a
+              >
+            </p>
+            <p class="mb-2">
+              <a href="mailto:sameerpokhrel2002@gmail.com"
+                ><i class="fas fa-envelope me-2"></i>Email</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 text-center">
+      <div class="container">
+        <h2 class="mb-5 headingg">Skills</h2>
+        <div class="row justify-content-center">
+          <!-- Web Development -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="skill-card p-4 border rounded">
+              <h5>Web Development</h5>
+              <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                  width="40"
+                  height="40"
+                />
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  loading="lazy"
+                  src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+                  alt="Bootstrap"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Frameworks -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="skill-card p-4 border rounded">
+              <h5>Frontend Frameworks</h5>
+              <div class="d-flex justify-content-center mt-3">
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="skill-card p-4 border rounded">
+              <h5>Backend Development</h5>
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  alt="Java"
+                  width="40"
+                  height="40"
+                />
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="skill-card p-4 border rounded">
+              <h5>Databases</h5>
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                  width="40"
+                  height="40"
+                />
+                
+                <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="40" height="40" />
+                
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Version Control -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="skill-card p-4 border rounded">
+              <h5>Version Control</h5>
+              <div class="d-flex justify-content-center mt-3">
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+          </div>
+          <!--Additional Skills-->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="skill-card p-4 border rounded">
+              <h5>Additional Skills</h5>
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                  alt="C"
+                  width="40"
+                  height="40"
+                />
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  alt="C++"
+                  width="40"
+                  height="40"
+                />
+                <img
+                loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+                  alt=".NET"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!--Spoken Languages -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="skill-card p-4 border rounded text-center">
+              <h5>Spoken Languages</h5>
+              <div class="d-flex justify-content-center gap-3 mt-3">
+                <div class="text-center">
+                  <img
+                  loading="lazy"
+                    src="https://img.icons8.com/color/48/000000/usa.png"
+                    alt="English"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="small mt-1">English</div>
+                </div>
+                <div class="text-center">
+                  <img
+                  loading="lazy"
+                    src="https://img.icons8.com/color/48/000000/nepal.png"
+                    alt="Nepali"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="small mt-1">Nepali</div>
+                </div>
+                <div class="text-center">
+                  <img
+                  loading="lazy"
+                    src="https://img.icons8.com/color/48/000000/india.png"
+                    alt="Hindi"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="small mt-1">Hindi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4 headingg">Projects</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Weather Dashboard</h5>
+                <p class="card-text">
+                  Java-based CLI app fetching live weather data using
+                  OpenWeatherMap API.
+                </p>
+                <a
+                  href="https://github.com/SameerPokhrel2002/WeatherApp-Java"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Online Voting System</h5>
+                <p class="card-text">
+                  Web app for college elections with student and admin
+                  dashboards.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              
+              <div class="card-body">
+                <h5 class="card-title">Screenshot Manager App</h5>
+                <p class="card-text">
+                  Java-based application that monitors new screenshots, renames
+                  them sequentially, and stores them in a dedicated folder.
+                  Resets count if the folder is deleted.
+                </p>
+                <a
+                  href="https://github.com/SameerPokhrel2002/ScreenshotOrganizerApp"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4 headingg">Experience</h2>
+        <div
+          class="timeline mx-auto"
+          style="max-width: 700px; text-align: left"
+        >
+          <div class="timeline-item mb-4">
+            <h5>Software Developer Intern</h5>
+            <small class="text-muted"
+              ><a href="https://matrixbrainwave.in.net/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> Brainwave Matrix Solutions</a> Company, India | April 2025 - Present</small
+            >
+            <p>
+              Developing Java-based applications, working on backend logic and
+              UI enhancements.
+            </p>
+          </div>
+          <div class="timeline-item mb-4">
+            <h5>Freelance Web Developer</h5>
+            <small class="text-muted">Self-employed | 2023 - 2025</small>
+            <p>
+              Built websites and small apps for clients using React, Node.js,
+              and vanilla JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4 headingg">Education</h2>
+        <div
+          class="education-list mx-auto"
+          style="max-width: 700px; text-align: left"
+        >
+      <!-- BSc CSIT -->
+      <div class="education-item mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="mb-1">BSc CSIT (7th Semester)</h5>
+          <small class="text-muted">
+            <i class="bi bi-calendar3 me-1"></i> 2021 – Present
+          </small>
+        </div>
+        <small class="text-muted d-block mb-1" style="margin-top: 4px;">
+          <a href="https://pmc.tu.edu.np/" rel="noopener noreferrer" target="_blank" style="text-decoration: none;">Patan Multiple Campus</a>, <span class="city-name">Kathmandu</span>
+        </small>
+        <p>Focused on software development, web technologies, and database management.</p>
+      </div>
+
+
+      <!--science stream-->
+          <!-- +2 Science -->
+      <div class="education-item mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="mb-1">+2, Science Stream  <a href="https://drive.google.com/file/d/1jslTku6KMiM6WXys6nBi7Ze4kV7xvQd7/view?usp=drive_link" style="text-decoration: none; color: black; font-size: small; margin-left: 5px;" target="_blank" rel="noopener noreferrer">certificate <i class="bi bi-award-fill"></i>
+
+
+</a></h5>
+          <small class="text-muted">
+            <i class="bi bi-calendar3 me-1"></i> 2019 – 2021
+          </small>
+        </div>
+        <small class="text-muted d-block mb-1" style="margin-top: 4px;">
+          <a href="https://nss.edu.np/" rel="noopener noreferrer" target="_blank" style="text-decoration: none;">National School of Sciences (NSS)</a>, <span class="city-name">Kathmandu</span>
+        </small>
+        <p>Completed high schooling in science stream.</p>
+      </div>
+
+             <!-- SEE -->
+      <div class="education-item mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="mb-1">Secondary Education Examination (SEE) <a href="https://drive.google.com/file/d/19Co_GsDoPCrbYMScxgIPxdPoD2TSRnyo/view?usp=drive_link" style="text-decoration: none; color: black; font-size: small; margin-left: 5px;" target="_blank" rel="noopener noreferrer">certificate <i class="bi bi-award-fill"></i>
+
+
+</a></h5>
+          <small class="text-muted">
+            <i class="bi bi-calendar3 me-1"></i> 2016 – 2019(graduate year)
+          </small>
+        </div>
+        <small class="text-muted d-block mb-1" style="margin-top: 4px;">
+          <a href="https://kef.edu.np/" rel="noopener noreferrer" target="_blank" style="text-decoration: none;">Karunanidhi Education Foundation (KEF)</a>, <span class="city-name">Pokhara</span>
+        </small>
+        <p>Given SEE examination with Optional Maths as an elective subject.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+      <div class="container" style="max-width: 600px">
+        <h2 class="mb-4 headingg">Contact Me</h2>
+        <form id="contactForm" action="https://formspree.io/f/xjkwnrdr" method="POST" data-formspree="true">
+          <div class="mb-3 text-start">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Your full name"
+              required
+            />
+          </div>
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+          <div class="mb-3 text-start">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div id="formResponse" class="mt-3"></div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
