@@ -147,3 +147,7 @@ form.addEventListener("submit",function(e){
     alert("Oops! There was a problem with your submission. Please try again.");
   });
 })
+
+const currentYear=new Date().getFullYear();
+
+document.getElementById("year").textContent = currentYear;

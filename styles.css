@@ -559,7 +559,59 @@ body.dark-mode .navbar-brand:hover {
   color: #037cdf !important;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+body.dark-mode .skill-card img[alt="GitHub"] {
+  filter: invert(1);
+  transition: filter 0.5s ease;
+}
+
+.skill-card .d-flex img {
+  margin: 0 8px;
+}
 
 
+/*footer*/
+.simple-footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 30px 0;
+  margin-top: 50px;
+  border-top: 1px solid #dee2e6;
+  transition: all 0.5s ease;
+}
 
+.simple-footer .footer-content p {
+  font-size: 0.9rem;
+  margin: 0;
+  transition: color 0.5s ease;
+}
 
+/* Dark mode styles */
+body.dark-mode .simple-footer {
+  background-color: #1e1e1e;
+  color: #bdc3c7;
+  border-top: 1px solid #444;
+  transition: all 0.5s ease;
+}
+
+body.dark-mode .simple-footer .footer-content p {
+  color: #bdc3c7;
+}
+
+body.dark-mode .simple-footer .text-danger {
+  color: #e74c3c !important;
+}
