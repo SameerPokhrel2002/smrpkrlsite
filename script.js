@@ -71,7 +71,7 @@ const phrases = [
   "Java developer",
   "React developer",
   "MongoDB",
-  "Node.js developer",
+  
 ];
 
 const typewriter = document.getElementById("typewriter");
