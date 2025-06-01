@@ -210,7 +210,7 @@
           <!-- Web Development -->
           <div class="col-md-3 col-sm-6 mb-4">
             <div class="skill-card p-4 border rounded">
-              <h5>Web Development</h5>
+              <h5 style="color:green">Web Development</h5>
               <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
                 <img
                 loading="lazy"
@@ -247,7 +247,7 @@
           <!-- Frontend Frameworks -->
           <div class="col-md-3 col-sm-6 mb-4">
             <div class="skill-card p-4 border rounded">
-              <h5>Frontend Frameworks</h5>
+              <h5 style="color:green">Frontend Frameworks</h5>
               <div class="d-flex justify-content-center mt-3">
                 <img
                 loading="lazy"
@@ -263,7 +263,7 @@
           <!-- Backend Development -->
           <div class="col-md-3 col-sm-6 mb-4">
             <div class="skill-card p-4 border rounded">
-              <h5>Backend Development</h5>
+              <h5 style="color:green">Backend Development</h5>
               <div class="d-flex justify-content-center gap-3 mt-3">
                 <img
                 loading="lazy"
@@ -286,7 +286,7 @@
           <!-- Databases -->
           <div class="col-md-3 col-sm-6 mb-4">
             <div class="skill-card p-4 border rounded">
-              <h5>Databases</h5>
+              <h5 style="color:green">Databases</h5>
               <div class="d-flex justify-content-center gap-3 mt-3">
                 <img
                 loading="lazy"
@@ -312,7 +312,7 @@
           <!-- Version Control -->
           <div class="col-md-3 col-sm-6 mb-4">
             <div class="skill-card p-4 border rounded">
-              <h5>Version Control</h5>
+              <h5 style="color:green">Version Control</h5>
               <div class="d-flex justify-content-center mt-3">
                 <img
                   loading="lazy"
@@ -334,7 +334,7 @@
           <!--Additional Skills-->
           <div class="col-md-3 col-sm-6 mb-4">
             <div class="skill-card p-4 border rounded">
-              <h5>Additional Skills</h5>
+              <h5 style="color:green">Additional Skills</h5>
               <div class="d-flex justify-content-center gap-3 mt-3">
                 <img
                 loading="lazy"
@@ -364,7 +364,7 @@
           <!--Spoken Languages -->
           <div class="col-md-3 col-sm-6 mb-4">
             <div class="skill-card p-4 border rounded text-center">
-              <h5>Spoken Languages</h5>
+              <h5 style="color:green">Spoken Languages</h5>
               <div class="d-flex justify-content-center gap-3 mt-3">
                 <div class="text-center">
                   <img
@@ -624,7 +624,7 @@
         <h2 class="mb-4 headingg">Contact Me</h2>
         <form id="contactForm" action="https://formspree.io/f/xjkwnrdr" method="POST" data-formspree="true">
           <div class="mb-3 text-start">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label">Full name:</label>
             <input
               type="text"
               class="form-control"
@@ -633,9 +633,22 @@
               placeholder="Your full name"
               required
             />
-          </div>
+     <div class="mb-3 text-start">
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input
+    type="tel"
+    class="form-control"
+    id="phone"
+    name="phone"
+    placeholder="e.g. 9841234567"
+    pattern="[0-9]{10}"
+    title="Enter a 10-digit phone number"
+    required
+  />
+</div>
+
           <div class="mb-3 text-start">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Email:</label>
             <input
               type="email"
               class="form-control"
@@ -646,13 +659,13 @@
             />
           </div>
           <div class="mb-3 text-start">
-            <label for="message" class="form-label">Message</label>
+            <label for="message" class="form-label">Message:</label>
             <textarea
               class="form-control"
               name="message"
               id="message"
               rows="4"
-              placeholder="Write your message here..."
+              placeholder="Quickly write your message here..."
               required
             ></textarea>
           </div>
