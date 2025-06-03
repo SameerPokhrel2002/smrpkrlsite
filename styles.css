@@ -615,3 +615,13 @@ body.dark-mode .simple-footer .footer-content p {
 body.dark-mode .simple-footer .text-danger {
   color: #e74c3c !important;
 }
+
+/* avoiding particles to hover over the profile image */
+#intro img {
+  position: relative;
+  z-index: 10;
+}
+
+#particles-js {
+  z-index: -1;
+}
