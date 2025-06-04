@@ -625,3 +625,25 @@ body.dark-mode .simple-footer .text-danger {
 #particles-js {
   z-index: -1;
 }
+
+
+
+/* Light mode: Black borders for skill cards and project cards */
+.skill-card {
+  border: 2px solid #1e1e1e !important; /* Black border for light mode */
+  transition: border-color 0.5s ease;
+}
+
+.card {
+  border: 2px solid #000000 !important; /* Black border for project cards in light mode */
+  transition: border-color 0.5s ease;
+}
+
+/* Dark mode: Keep borders dark/gray for skill cards and project cards */
+body.dark-mode .skill-card {
+  border: 2px solid #edc2c2 !important; /* Dark gray border for dark mode */
+}
+
+body.dark-mode .card {
+  border: 2px solid #edc2c2 !important; /* Dark gray border for project cards in dark mode */
+}
